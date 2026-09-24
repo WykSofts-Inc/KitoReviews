@@ -1,5 +1,7 @@
 # KitoReviews
 
+**[Documentation](https://wyksofts-inc.github.io/KitoReviews/documentation/kitoreviews/)**
+
 Ratings and reviews for SwiftUI: star ratings you tap or drag, rating summaries with animated
 histograms, review cards, a sortable review list, a review composer, emoji / thumbs / NPS / slider
 inputs, and a polite "Enjoying the app?" prompt with a policy for when to show it. Part of the
