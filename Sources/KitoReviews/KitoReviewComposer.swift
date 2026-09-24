@@ -413,6 +413,7 @@ private struct GuidanceRing: View {
                 .trim(from: 0, to: min(max(progress, 0), 1))
                 .stroke(color, style: StrokeStyle(lineWidth: 2.5, lineCap: .round))
                 .rotationEffect(.degrees(-90))
+                .flipsForRightToLeftLayoutDirection(true) // Circle doesn't mirror but rotation does; keeps the start at the top in RTL
             if progress >= 1 {
                 Image(systemName: "checkmark").font(.system(size: 7, weight: .black)).foregroundStyle(color)
                     .transition(.scale.combined(with: .opacity))
