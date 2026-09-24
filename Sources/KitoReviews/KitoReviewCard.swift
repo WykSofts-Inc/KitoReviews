@@ -273,7 +273,7 @@ public struct KitoReviewCard: View {
             Capsule().fill(accent.opacity(0.7)).frame(width: 3)
             VStack(alignment: .leading, spacing: theme.spacing.xs) {
                 HStack(alignment: .firstTextBaseline, spacing: 6) {
-                    Image(systemName: "arrowshape.turn.up.left.fill").font(.caption2)
+                    Image(systemName: "arrowshape.turn.up.backward.fill").font(.caption2)
                     VStack(alignment: .leading, spacing: 1) {
                         Text("Response from \(reply.name)").font(theme.typography.caption.weight(.bold))
                         Text(KitoReviewDate.relative(reply.date)).font(theme.typography.caption)

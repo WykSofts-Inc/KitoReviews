@@ -108,6 +108,14 @@ content.kitoReviewPrompt(isPresented: $asking, appName: "Kito") { feedback in
 `KitoReviewFilter`, `KitoReviewDate.relative(_:to:)`, `KitoRatingMood`, `KitoTextGuidance` and
 `KitoReviewPromptPolicy` are plain values you can use and test on their own.
 
+## Right-to-left
+
+- Stars, the rating slider, NPS scale, summaries and cards mirror automatically in Arabic/Hebrew layouts.
+- Star and slider drags read the layout direction, so dragging toward the leading edge always lowers the rating.
+- The owner-reply icon uses `arrowshape.turn.up.backward.fill`, so it points the right way in RTL.
+- Averages and percentages use Latin digits; format them yourself if you need locale digits.
+- The composer's guidance ring starts at the top in RTL too (mirrored).
+
 ## Installation
 
 ```swift
